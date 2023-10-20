@@ -1,0 +1,34 @@
+// body setting
+*{
+    box-sizing: border-box;
+    transition: .5s;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: helvetica;
+    background-color: whitesmoke;
+    
+}
+//  All variables side
+
+// backgroundcolor
+$eco-background: white;
+$eco-background2:orange;
+$eco-background3:#35373b;
+
+
+// general flex mix-in side
+@mixin  flexArea($display-mix,$justifycontent-mix,$alignitems-mix,$flex-direction) {
+    display: $display-mix;
+    justify-content: $justifycontent-mix;
+    align-items: $alignitems-mix;
+    flex-direction: $flex-direction;
+}
+
+//  #CC232A
+//  #7C7C62
+//  #0060C8
+//  #D6B0A9
+//  #AA797C
+

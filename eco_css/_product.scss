@@ -1,0 +1,213 @@
+.product-types-general-container {
+    // border: 2px solid orange;
+    margin-top: 90px;
+
+    .product-types-second-container-holder {
+        // border: 2px solid green;
+        width: 95%;
+        margin: auto;
+
+        .product-sex-type {
+            // border: 2px solid orange;
+            button {
+                padding: 7px 22px;
+                border: none;
+                cursor: pointer;
+                margin-left: 15px;
+                background-color: #35373b;
+                color: $eco-background;
+                &:nth-child(1) {
+                    margin-left: 0px;
+                }
+            }
+        }
+        .all-product-container-holder {
+            //    border: 2px solid purple;
+            .all-men-shoes-product-general-container {
+                position: relative;
+                display: none;
+                &.babies-container {
+                    .next-showing-women-shoe-container {
+                        position: absolute;
+                        bottom: -20%;
+                        right: 0%;
+                        z-index: 99999;
+                        // display: none;
+
+                        // border: 2px solid red;
+                        @include flexArea(none, space-between, "", "");
+                        button {
+                            padding: 10px 20px;
+                            // width: 20px;
+                            // height: 20px;
+                            cursor: pointer;
+                            border: none;
+                            padding: 0px 18px;       
+                            box-shadow: inset 0px 1px 3px grey;
+                            border-radius: 50%;
+                            font-size: 13px;
+                            background-color: rgb(255, 166, 0);
+                            color: white;
+                        }
+                        .next-num {
+                            width: 180px;
+
+                            @include flexArea(flex, space-around, "", "");
+                            p{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                &.women-container {
+                    .next-showing-women-shoe-container {
+                        position: absolute;
+                        bottom: -20%;
+                        right: 0%;
+                        z-index: 99999;
+                        // display: none;
+
+                        // border: 2px solid red;
+                        @include flexArea(none, space-between, "", "");
+                        // display: none;
+                        button {
+                            padding: 0px 18px;
+                            cursor: pointer;
+                            border-radius: 50%;
+                            // font-size: 13px;
+                            border: none;
+                            color: white;
+                            background-color: orange;
+                            box-shadow: inset 0px 1px 3px grey;
+                        }
+                        .next-num {
+                            width: 180px;
+
+                            @include flexArea(flex, space-around, "", "");
+                            p{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .next-showing-shoe-container {
+                    position: absolute;
+                    bottom: -20%;
+                    right: 0%;
+                    @include flexArea(none, space-between, "", "");
+                    // display: none;
+                    button {
+                        padding: 0px 18px;       
+                        box-shadow: inset 0px 1px 3px grey;;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        font-size: 13px;
+                        z-index: 9999;
+                        background-color: $eco-background2;
+                        color: white;
+                        border: none;
+                    }
+                    .next-num {
+                        width: 180px;
+
+                        @include flexArea(flex, space-around, "", "");
+                        p{
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .second-men-shoes-product-general-container {
+                    flex-flow: row wrap;
+
+                    // border: 2px solid green;
+                    @include flexArea(flex, space-between, "", "");
+                    &.product-men1 {
+                        display: none;
+                    }
+                    &.product-women1 {
+                        display: none;
+                    }
+
+                    .men-product-holder {
+                        //    border: 2px solid red;
+                        width: 22.999%;
+                        height: 220px;
+                        transform-style: preserve-3d;
+                        position: relative;
+                        .product-img-holder {
+                            width: 100%;
+                            height: 200px;
+                            
+                            //    border: 2px solid green;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                                // box-shadow: 0px 20px 4px grey;
+
+                            }
+                        }
+
+                        .men-product-text {
+                            //    border: 2px solid orangered;
+                            transform-style: preserve-3d;
+                            transform: perspective(500px) translateZ(5px);
+                            width: 100%;
+                            bottom: 0%;
+                            background-color: #35373b;
+                            color: white;
+                            position: absolute;
+                            padding: 10px 10px;
+                            @include flexArea(flex, space-between, center, "");
+                            &::after {
+                                position: absolute;
+                                content: "";
+                                border: 2px solid white;
+                                background-color: #35373b;
+                                left: -52px;
+                                margin-left: 30px;
+                                top: -5%;
+                                height: 100%;
+                                padding: 0px 20px;
+                                transform: perspective(500px) rotateY(115deg) translateX(20px);
+                            }
+
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                border: 2px solid white;
+                                background-color: #35373b;
+                                right: -19.5px;
+                                // height: 95%;
+                                bottom: 0;
+                                padding: 0px 15px;
+                                top: -5%;
+                                transform: perspective(500px) translateX(0px) rotateY(66deg);
+                            }
+                            h3 {
+                                margin: 0;
+                            }
+                            p {
+                                margin: 0;
+                            }
+                            .men-product-text-general {
+                                transform-style: preserve-3d;
+                                //    border: 2px solid red;
+                                width: 100%;
+                                z-index: -999;
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                                width: 100%;
+                                padding: 20px 0px;
+                                margin-top: -5px;
+                                transform: perspective(500px) translateZ(-100px) rotateY(-180deg) rotateX(35deg);
+                                background-color: rgba(26, 25, 25, 0.123);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

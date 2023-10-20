@@ -1,0 +1,70 @@
+@media(max-width:911px){
+    .second-men-shoes-product-general-container{
+        // border: 2px solid blue;
+        flex-flow: row wrap ;
+        .men-product-holder{
+            width: 30% !important;
+            .men-product-text{
+                h3{
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+            &#men-last{
+                align-self: flex-start;
+                margin-right: auto;
+                margin-left: 30px;
+            }
+        }
+    }
+    #footer-margin{
+        // border: 2px solid orange;
+        margin-top: 140px !important;
+    }
+}
+@media(max-width:628px){
+    .second-men-shoes-product-general-container{
+        .men-product-holder{
+            width: 45% !important;
+            &#men-last{
+                margin-right: 0 !important;
+                margin-left: 0 !important;
+            }
+        }
+    }
+    #footer-margin{
+        margin-top: 180px !important;
+    }
+    .next-showing-women-shoe-container{
+        bottom: -10% !important;
+    }
+    .next-showing-shoe-container{
+        bottom: -10% !important;
+    }
+}
+
+@media(max-width:420px){
+    .second-men-shoes-product-general-container{
+        .men-product-holder{
+            width: 100% !important;
+        }
+    }
+    .product-sex-type{
+        button{
+            margin-left: 0px !important;
+        }
+    }
+}
+@media(max-width:334px){
+.product-sex-type{
+    @include flexArea(flex,space-between,'','');
+    flex-flow: row wrap;
+    button{
+       width: 49%;
+    margin-bottom: 7px;
+
+    }
+}
+}

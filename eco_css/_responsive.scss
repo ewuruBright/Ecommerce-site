@@ -1,0 +1,605 @@
+@media (max-width: 940px) {
+   
+    .nav-ii {
+        //    border: 2px solid red;
+        width: 80% !important;
+        margin-right: auto;
+        margin-left: -60px;
+        position: relative;
+        .nav-input {
+            .nav-sub-search {
+                padding: 10px 15px !important;
+                position: absolute;
+                right: 0;
+                box-shadow: none !important;
+            }
+            input {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .nav-iii {
+        //    border: 2px solid pink;
+        width: 400px !important;
+        margin-left: 30px !important;
+        li {
+            margin: 0px 0px !important;
+            //    border: 2px solid blue;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    .news-letter-general-container{
+        @include flexArea(flex,space-around,center,column);
+        .news-letter-left{
+            width: 80% !important;
+        }
+        .news-letter-right{
+            width: 80% !important;
+            margin-top: 10px;
+        }
+    }
+    .men-board-sub{
+        .men-shoe-board-left{
+            .men-shoe-left-board-img{
+                img{
+                  &#man3-poster{
+                    transform: perspective(1000px) translateZ(350px) translateY(80px) translateX(10%);
+
+                  }  
+                }
+               
+            }
+        }
+    }
+    .nav-iii {
+        // transition: 4s;
+        // opacity: 0;
+        border-top: 1px solid white;
+        display: none !important ;
+        // border: 2px solid red;
+        padding-bottom: 20px !important;
+        position: fixed;
+        margin-top: 0;
+        bottom: 0%;
+        top: 85px;
+        left: -30px;
+        // right: 0%;
+        width: 100% !important;
+        @include flexArea(flex, flex-start !important, flex-start !important, column);
+        background-color: $eco-background3 !important;
+
+        li {
+            //    border-bottom: 2px solid orange;
+            margin-top: 40px !important;
+            margin-left: 30px !important;
+            width: 100% !important;
+        }
+    }
+    .nav-respon {
+        display: block;
+    }
+    .nav-iii {
+        &.show1 {
+            display: flex !important;
+            flex-direction: column;
+            //   opacity: 1 !important;
+
+            li {
+                a {
+                    color: white !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .recent-arrival-date{
+        width: 80% !important;
+    }
+    .nav-ii {
+        // border: 2px solid blue;
+        display: none !important;
+        position: fixed;
+        top: 120px;
+        // left: 50%;
+        // transform: translate(-50%,-25%);
+        z-index: 999;
+        margin-left: 0px !important;
+        opacity: 0;
+    }
+    .nav-ii {
+        width: 90% !important;
+        .nav-input {
+            box-shadow: 0px 1px 1px grey;
+            // border: 2px solid green;
+            input {
+                box-shadow: none !important;
+                border: none !important;
+            }
+            .nav-sub-search {
+                box-shadow: none !important;
+            }
+        }
+        &.show2 {
+            display: flex !important;
+            opacity: 1 !important;
+        }
+    }
+    .nav-iii {
+        li {
+            &:first-child {
+                margin-top: 120px !important;
+            }
+        }
+    }
+
+    .men-shoe-board-left{
+        height: 220px !important;
+        .men-shoe-board-text{
+            h2{
+                font-size: 18px !important;
+            }
+        }
+        .men-shoe-left-board-img{
+            img{
+                &#man3-poster{
+                    transform: perspective(500px) translateZ(350px) translateY(60px) translateX(5%) !important;
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .nav2 {
+        width: 250px !important;
+        li {
+            a {
+                font-size: 14px !important;
+            }
+        }
+    }
+
+    .landing-left-button {
+        display: none;
+    }
+    .landing-right-button {
+        display: none;
+    }
+}
+
+@media (max-width: 1173px) {
+    .right-landing-i {
+        h1 {
+            font-size: 23px;
+        }
+    }
+}
+
+@media (max-width: 783px) {
+    .landing-page-general-container {
+        @include flexArea(flex, space-between, center, column);
+        .left-landing-page-container {
+            width: 100%;
+            .left-landing-page-holder {
+                height: 300px;
+            }
+        }
+        .right-landing-page {
+            width: 100% !important;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+   
+    .left-landing-page-holder {
+        // border: 2px solid red;
+        height: 340px;
+    }
+}
+
+@media (max-width: 1188px) {
+    .right-landing-i {
+        h1 {
+            font-size: 23px;
+        }
+    }
+}
+
+@media (max-width: 1012px) {
+    .right-section1-text {
+        h3 {
+            font-size: 10px;
+        }
+    }
+    .right-section1-holder {
+        .right-section1-img {
+            height: 140px !important;
+        }
+    }
+}
+
+@media (max-width: 775px) {
+    .bus-and-others-general-container{
+        flex-flow: row wrap;
+        .content4{
+            padding: 10px 10px;
+        }
+    }
+    .feature-categoreis-right {
+        width: 67% !important;
+        .feature-right-section-i {
+            flex-flow: row wrap;
+            .right-section1-holder {
+                width: 49% !important;
+                margin-bottom: 10px;
+                // border: 2px solid red;
+                .right-section1-img {
+                    height: 130px !important;
+                }
+            }
+        }
+        .right-section1-text {
+            h3 {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .feature-categorie-left {
+        width: 32% !important;
+        height: 600px !important;
+        max-height: auto;
+    }
+    #right-section1-margin {
+        margin-top: -10px;
+    }
+  
+}
+
+@media (max-width: 470px) {
+    #filters {
+        font-size: 16px !important;
+        font-weight: 900;
+    }
+
+    #categories {
+        font-size: 15px;
+        font-weight: 900;
+    }
+    #brands {
+        font-size: 16px;
+        font-weight: 900;
+    }
+    .right-section1-text {
+        h3 {
+            font-size: 12px !important;
+        }
+    }
+    .right-section-star {
+        i {
+            font-size: 12px !important;
+        }
+    }
+}
+
+@media (max-width: 353px) {
+    .bus-and-others-general-container{
+        .content4{
+            width: 100% !important;
+        }
+    }
+    .feature-categorie-left {
+        display: none;
+    }
+    .feature-categoreis-right {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 286px) {
+    .left-landing-page-container {
+        width: 100%;
+        .left-landing-page-holder {
+            height: 200px !important;
+        }
+    }
+}
+@media (max-width: 875px) {
+
+    
+    .dont-miss-out-text {
+        h2 {
+            font-size: 16px;
+        }
+        #amt {
+            padding: 5px 20px !important;
+        }
+        .dont-miss-out-free {
+            h2 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .further-reduction-general-container{
+        // border: 2px solid red !important;
+        .further-reduction-left{
+            .further-left-gif{
+                height: 200px !important;
+            }
+            .further-left-ii-gif{
+                height: 200px !important;
+            }
+        }
+        .right-content1-i{
+            height: 200px !important;
+            .further-right-img{
+                &::before{
+                    font-size: 16px !important;
+                }
+            }
+           
+        }
+        .right-content1-ii{
+            height: 200px !important;
+            &::before{
+                font-size: 15px !important;
+            }
+        }
+        .right-third-container{
+            height: 200px !important;
+            .kids-shoe-selection{
+                &::before{
+                    font-size: 16px !important;
+                }
+            }
+        }
+        .female-shoe-collection{
+            &::before{
+                font-size: 13px !important;
+            }
+        }
+    }
+    .dont-miss-out-text {
+        p {
+            font-size: 14px;
+        }
+        #amt {
+            padding: 5px 10px !important;
+        }
+       
+    }
+
+    .men-shoe-board-text{
+        h2{
+            font-size: 25px !important;
+        }
+        p{
+            font-size: 18px !important;
+        }
+        h3{
+            font-size: 18px !important;
+        }
+    }
+   
+}
+
+@media (max-width: 475px) {
+    .dont-miss-out-sub-container {
+        @include flexArea(flex, space-between, center, column);
+        .dont-miss-out-text {
+            width: 100% !important;
+        }
+        .dont-miss-out-img {
+            width: 100% !important;
+        }
+    }
+}
+
+@media(max-width:680px){
+    .dont-miss-out-width-sub-container {
+        .dont-miss-out-left {
+            .dont-miss-out-img{
+            //    border: 2px solid red;
+               height: 180px !important;
+                
+            }
+        }
+    }
+}
+
+
+@media(max-width:600px){
+    .dont-miss-out-width-sub-container{
+        transform-style: none !important;
+@include flexArea(flex,space-between,'',column);
+height: auto !important;
+.dont-miss-out-left{
+    width:100% !important;
+margin-bottom: 5px !important;
+
+
+transform: perspective(none) translateZ(none);
+
+}
+    }
+
+    .men-shoe-board-left{
+        margin-left: 12px !important;
+    }
+}
+
+@media(max-width:660px){
+   
+    .recent-shoe-container{
+        // flex-flow: row wrap !important;
+        @include flexArea(flex, '', "", "");
+
+        .recent-shoe-sub-container{
+            width: 32.8% !important;
+            margin-bottom: 4px !important;
+        }
+    }
+}
+
+@media(max-width:372px){
+
+    .further-reduction-right{
+        
+        .right-third-container{
+            height: auto !important;
+            flex-flow: row wrap !important;
+            .kids-shoe-selection{
+                width: 49% !important;
+                height: 180px !important;
+                max-height: 180px !important;
+                img{
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+            }
+            .female-shoe-collection{
+                width: 49% !important;
+                height: 180px !important;
+                max-height: 180px !important;
+            }
+        }
+        .different-colour-selection{
+            width: 100% !important;
+            height: 155px !important;
+            margin-top: 10px;
+        }
+    }
+    .recent-shoe-container{
+       .recent-shoe-sub-container{
+        width: 49.3% !important;
+    } 
+    }
+    
+
+    .men-shoe-board-left{
+        margin-left: 10px !important;
+        height: 150px !important;
+        .men-shoe-left-board-img{
+            img{
+                &#man3-poster{
+                    transform: perspective(500px) translateZ(350px) translateY(40px) translateX(10%) !important;
+
+                }
+            }
+        }
+        .men-shoe-board-text{
+            h2{
+                font-size: 14px !important;
+            }
+            p{
+                font-size: 14px !important;
+            }
+            h3{
+                font-size: 14px !important;
+            }
+            // display: none !important;
+            transform: perspective(1000px) translateZ(10px) translateY(50px) translateX(-10px) !important ;
+        }
+    }
+}
+
+@media(max-width:292px){
+    .recent-arrival-date{
+        width: 100% !important;
+    }
+}
+
+
+@media (max-width:455px){
+    .further-reduction-general-container{
+        .further-reduction-left{
+            display: none !important;
+        }
+        .further-reduction-right{
+            width: 100% !important;
+        }
+    }
+}
+
+@media(max-width:832px){
+
+    .second-footer-holder{
+        flex-flow: row wrap;
+        .footer-text-holder{
+        // border: 2px solid orange;
+        &:nth-child(1){
+            width: 49% !important;
+
+        }
+        &:nth-child(2){
+            width: 49% !important;
+        }
+        &:nth-child(3){
+            width: 49% !important;
+        }
+       
+    }
+    .news-letter-footer-container{
+        width: 49% !important;
+    }
+    }
+    
+    
+}
+@media(max-width:410px){
+    .second-footer-holder{
+       .footer-text-holder{
+        // border: 2px solid red;
+        // width: 100% !important;
+        &:nth-child(1){
+            width: 100% !important;
+            // max-width: 100% !important;
+
+        }
+        &:nth-child(2){
+            width: 100% !important;
+            // max-width: 100% !important;
+
+        }
+        &:nth-child(3){
+            width: 100% !important;
+            // max-width: 100% !important;
+
+        }
+    } 
+    .news-letter-footer-container{
+        width: 100% !important;
+    }
+    }
+    
+}
+
+@media(max-width:705px){
+    .bus-and-others-general-container{
+        flex-flow: wrap;
+        @include flexArea(flex,space-between,center,'');
+        .content4{
+    @include flexArea(flex,flex-start,'','');
+
+            margin-left:10px;
+            margin-bottom: 10px;
+            width: 47% ;
+        }
+    }
+}
+
+
+
+
